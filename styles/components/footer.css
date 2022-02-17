@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  height: 48px;
-  padding-top: 0;
-  border: 4px solid rgb(200, 238, 243);
+  height: 50px;
+  margin-top: 10px;
+  border-top: 1px solid rgb(128, 167, 173);
 }
 
 .icons {
   display: contents;
+  z-index: 2px;
 }
 
 .icons img {

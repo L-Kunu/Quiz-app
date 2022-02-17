@@ -6,7 +6,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  border-bottom: solid rgb(200, 238, 243);
+  border-bottom: 5px solid rgb(128, 167, 173);
   height: 48px;
   width: 100%;
 }

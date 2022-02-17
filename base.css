@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: serif;
-  border: 3px solid rgb(31, 166, 184);
+  background-color: rgb(225, 230, 230);
+  border: 3px solid rgb(50, 126, 138);
   border-radius: 10px;
   display: flex;
   flex-direction: column;

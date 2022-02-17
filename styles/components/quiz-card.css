@@ -2,13 +2,20 @@
   position: relative;
   display: grid;
   align-items: center;
-  width: 250px;
+  width: 300px;
   padding: 20px;
-  margin: 20px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgb(156, 224, 233);
+  margin-bottom: 50px;
+  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgb(184, 203, 206);
   border-radius: 10px;
   background: rgb(250, 246, 246);
+}
+
+.home {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
 }
 
 .question__title {
@@ -20,7 +27,7 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-  border: 2px solid rgb(31, 166, 184);
+  border: 2px solid rgb(204, 233, 238);
   border-radius: 8px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   font-size: 1.2rem;
