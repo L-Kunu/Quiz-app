@@ -8,7 +8,8 @@
     "dev": "npx live-server .",
     "prettier:write": "npx prettier --write .",
     "prettier:check": "npx prettier --check .",
-    "eslint:check": "npx eslint ."
+    "eslint:check": "npx eslint .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/techTanstic/Quiz-app#readme",
   "dependencies": {
+    "husky": "^7.0.4",
     "live-server": "^1.2.1",
     "prettier": "^2.5.1"
   },
