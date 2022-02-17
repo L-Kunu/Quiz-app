@@ -1,5 +1,5 @@
-@import "base.css";
-@import "components/header.css";
-@import "components/bookmark.css";
-@import "components/quiz-card.css";
-@import "components/footer.css";
+@import 'base.css';
+@import 'components/header.css';
+@import 'components/bookmark.css';
+@import 'components/quiz-card.css';
+@import 'components/footer.css';
