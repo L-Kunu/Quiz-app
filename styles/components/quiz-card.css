@@ -1,21 +1,19 @@
 .quiz__card {
-  position: relative;
   display: grid;
   align-items: center;
-  width: 300px;
-  padding: 20px;
-  margin-bottom: 50px;
-  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.4);
+  background: rgb(250, 246, 246);
   border: 3px solid rgb(184, 203, 206);
   border-radius: 10px;
-  background: rgb(250, 246, 246);
+  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.4);
+  /*width: 300px;*/
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  position: relative;
+  padding: 20px;
 }
 
-.home {
-  margin-top: 20px;
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 480px) {
 }
 
 .question__title {

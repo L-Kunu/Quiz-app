@@ -1,0 +1,44 @@
+.profile__container {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.profile__image {
+  border: 5px solid rgb(173, 202, 209);
+  border-radius: 50%;
+}
+
+.profile__name {
+  color: rgb(94, 148, 161);
+  font-family: serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.profile__text {
+  font-family: serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  word-break: normal;
+}
+
+.skill__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.log-out__button {
+  border: 2px solid rgb(173, 202, 209);
+  border-radius: 10px;
+  margin: 50px;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

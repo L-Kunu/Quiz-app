@@ -9,70 +9,172 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <nav>
-      <header>QUIZ APP</header>
-    </nav>
+  
+    
+    <main data-js="home__section" class="home hidden">
+      <nav class="header__nav home">
+        <h1>QUIZ APP</h1>
+        
+      </nav>
+      
+        <article class="quiz__card home">
+          <img
+            class="bookmark"
+            src="icons/bookmark.png"
+            width="48"
+            height="48"
+            alt=""
+          />
+          <div class="question__title">Question</div>
+          <div class="question__card">
+            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
+          </div>
+          <button class="show-answer__btn">Show Answer</button>
+          <ul class="answers">
+            <li>Ans1</li>
+            <li>Ans2</li>
+            <li>Ans3</li>
+            <li>Ans4</li>
+          </ul>
+        </article>
 
-    <main data-page="home" class="scrollable">
-      <article class="quiz__card home">
-        <img
-          class="bookmark"
-          src="icons/bookmark.png"
-          width="48"
-          height="48"
-          alt=""
-        />
-        <div class="question__title">Question</div>
-        <div class="question__card">
-          Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
-        </div>
-        <button class="show-answer__btn">Show Answer</button>
-        <ul class="answers">
-          <li>Ans1</li>
-          <li>Ans2</li>
-          <li>Ans3</li>
-          <li>Ans4</li>
-        </ul>
-      </article>
+        <article class="quiz__card">
+          <img
+            class="bookmark"
+            src="icons/bookmark.png"
+            width="48"
+            height="48"
+            alt=""
+          />
+          <div class="question__title">Question</div>
+          <div class="question__Scard">
+            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
+          </div>
+          <button class="show-answer__btn">Show Answer</button>
+          <ul class="answers">
+            <li>Ans1</li>
+            <li>Ans2</li>
+            <li>Ans3</li>
+            <li>Ans4</li>
+          </ul>
+        </article>
 
-      <article class="quiz__card">
-        <img
-          class="bookmark"
-          src="icons/bookmark.png"
-          width="48"
-          height="48"
-          alt=""
-        />
-        <div class="question__title">Question</div>
-        <div class="question__Scard">
-          Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
+        <article class="quiz__card">
+          <img
+            class="bookmark"
+            src="icons/bookmark.png"
+            width="48"
+            height="48"
+            alt=""
+          />
+          <div class="question__title">Question</div>
+          <div class="question__card">
+            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
+          </div>
+          <button class="show-answer__btn">Show Answer</button>
+          <ul class="answers">
+            <li>Ans1</li>
+            <li>Ans2</li>
+            <li>Ans3</li>
+            <li>Ans4</li>
+          </ul>
+        </article>
+
+        
+      </main>
+
+      
+      <main data-js="bookmark__section" class="bookmarks hidden">
+        <nav class="header__nav bookmarks">
+          <h2>Bookmarks</h2>
+        </nav>
+
+      
+      
+      <main data-js="create__formular" class="form hidden">
+        <nav class="header__nav create">
+          <h2>Create</h2>
+        </nav>
+      </main>
+      <form class="create__card" action="#">
+        <label for="question-input">Question</label>
+        <textarea name="question-input" id="#" class="question__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your question"></textarea>
+
+        <label for="answer-input">Answer</label>
+        <textarea name="answer-input" id="#" class="answer__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your answers"></textarea>
+        
+        <label class="create mt-15" for="create-tags"
+        >Add tags
+        <small class="create"></small>
+      </label>
+      <textarea
+        name="create-tags"
+        class="create__tags"
+        cols="40"
+        rows="3" placeholder="Spring, Summer, Autumn, Winter"></textarea>
+      </textarea>
+
+        <input type="submit" class="submit__button" value="Create">
+
+
+      </form>
+
+
+      <main data-js="profile__section" class="profile hidden">
+        <nav class="header__nav">
+          <h1>Profile</h1>
+         </nav>
+        <div class="profile__container">
+          <img
+            class="profile__image"
+            src="images/mc-Lil.jpg" width="250" height="200" 
+            alt="a person"
+          />
+          
+            <h2 class="profile__name">Lillian Kunu</h2>
+        
         </div>
-        <button class="show-answer__btn">Show Answer</button>
-        <ul class="answers">
-          <li>Ans1</li>
-          <li>Ans2</li>
-          <li>Ans3</li>
-          <li>Ans4</li>
+        <p class="profile__text">
+          Hello, <br>
+          I´m Lillian, an Online Marketing Manager currently
+          studying Software Development at Neue Fische.
+          This here is my first ever app. I hope you enjoyed clicking through it.
+          
+        </p>
+        <h3 class="my__skills">skills</h3>
+        <ul class="skill__list profile__taglist">
+          <li class="tag">Online Marketing</li>
+          <li class="tag">CSS</li>
+          <li class="tag">HTML</li>
+          <li class="tag">Javascript</li>
+          
         </ul>
-      </article>
-    </main>
-    <footer class="footer">
-      <a class="icons" href=""
-        ><img src="icons/home.png" width="48" height="48" alt="home-icon"
-      /></a>
-      <a class="icons" href=""
-        ><img
+        <button data-js="logOut__Button" class="log-out__button">Log out</button>
+      </main>
+
+    <nav class="footer">
+      <button data-js="button" class="nav__button">
+        <img src="icons/home.png" width="48" height="48" alt="home-icon" />
+      </button>
+      <button data-js="button" class="nav__button">
+        <img
           src="icons/bookmark.png"
           width="48"
           height="48"
           alt="bookmark-icon"
-      /></a>
-      <a class="icons" href=""
-        ><img src="icons/input.png" width="48" height="48" alt="input-icon"
-      /></a>
-      <a class="icons" href=""
-        ><img src="icons/person.png" width="48" height="48" alt="profile-icon"
-      /></a>
-    </footer>
+        />
+      </button>
+      <button data-js="button" class="nav__button">
+        <img src="icons/input.png" width="48" height="48" alt="input-icon" />
+      </button>
+      <button data-js="button" class="nav__button">
+        <img
+          src="icons/profile.png"
+          width="48"
+          height="48"
+          alt="profile-icon"
+        />
+      </button>
+    </nav>
   </body>
 </html>
