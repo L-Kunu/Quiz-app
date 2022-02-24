@@ -1,7 +1,7 @@
 .quiz__card {
   display: grid;
   align-items: center;
-  background: rgb(250, 246, 246);
+  background: rgb(166, 195, 204);
   border: 3px solid rgb(184, 203, 206);
   border-radius: 10px;
   box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.4);
@@ -33,17 +33,15 @@
 }
 
 .answers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   gap: 10px;
-  text-decoration: none;
 }
 
-li {
-  /*display: inline-block;
-    text-align: center;*/
-  list-style-type: none;
-  border: 2px solid rgb(179, 206, 209);
-  border-radius: 5px;
+.answer__btn {
+  border: 2px solid rgb(218, 239, 241);
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }

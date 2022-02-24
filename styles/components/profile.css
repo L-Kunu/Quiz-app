@@ -42,3 +42,23 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+.my__skills {
+  color: rgb(94, 148, 161);
+  font-family: serif;
+  font-size: 2rem;
+}
+
+li {
+  /*display: inline-block;
+      text-align: center;*/
+  list-style-type: none;
+  border: 2px solid rgb(179, 206, 209);
+  border-radius: 5px;
+}
+
+.my__hobbies {
+  color: rgb(94, 148, 161);
+  font-family: serif;
+  font-size: 2rem;
+}

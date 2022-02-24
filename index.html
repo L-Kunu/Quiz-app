@@ -11,35 +11,38 @@
   <body>
   
     
-    <main data-js="home__section" class="home hidden">
+    <main data-js="card-section__home" class="home">
       <nav class="header__nav home">
         <h1>QUIZ APP</h1>
         
       </nav>
       
-        <article class="quiz__card home">
-          <img
+        <article data-js="card" class="quiz__card home">
+          
+          <img data-js="bookmarked"
+            
             class="bookmark"
             src="icons/bookmark.png"
             width="48"
             height="48"
             alt=""
-          />
+            />
+          
           <div class="question__title">Question</div>
-          <div class="question__card">
-            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
-          </div>
-          <button class="show-answer__btn">Show Answer</button>
-          <ul class="answers">
-            <li>Ans1</li>
-            <li>Ans2</li>
-            <li>Ans3</li>
-            <li>Ans4</li>
-          </ul>
+          
+            <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
+          
+          
+          <div data-js="answer-title" class="answers">
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number two</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
+            <button data-js="right-answer" class="right-answer__btn answer__btn">Number four</button>
+        </div>
         </article>
 
-        <article class="quiz__card">
-          <img
+        <article data-js="card" class="quiz__card home">
+          <img data-js="bookmarked"
             class="bookmark"
             src="icons/bookmark.png"
             width="48"
@@ -47,20 +50,18 @@
             alt=""
           />
           <div class="question__title">Question</div>
-          <div class="question__Scard">
-            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
-          </div>
-          <button class="show-answer__btn">Show Answer</button>
-          <ul class="answers">
-            <li>Ans1</li>
-            <li>Ans2</li>
-            <li>Ans3</li>
-            <li>Ans4</li>
-          </ul>
+          <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
+          
+          <div class="answers">
+            <button data-js="right-answer" class="right-answer__btn answer__btn">Number one</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number two</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+        </div>
         </article>
 
-        <article class="quiz__card">
-          <img
+        <article data-js="card" class="quiz__card">
+          <img data-js="bookmarked"
             class="bookmark"
             src="icons/bookmark.png"
             width="48"
@@ -68,30 +69,51 @@
             alt=""
           />
           <div class="question__title">Question</div>
-          <div class="question__card">
-            Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem
-          </div>
-          <button class="show-answer__btn">Show Answer</button>
-          <ul class="answers">
-            <li>Ans1</li>
-            <li>Ans2</li>
-            <li>Ans3</li>
-            <li>Ans4</li>
-          </ul>
+          <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
+          
+          <div class="answers">
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
+            <button data-js="right-answer" class="right-answer__btn answer__btn">Number two</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
+            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+        </div>
         </article>
 
         
       </main>
 
       
-      <main data-js="bookmark__section" class="bookmarks hidden">
+      <main data-js="card-section__bookmark" class="bookmarks hidden">
         <nav class="header__nav bookmarks">
           <h2>Bookmarks</h2>
-        </nav>
+           </nav>
+           <article data-js="card" class="quiz__card bookmark">
+          
+            <img data-js="bookmark"
+            class="bookmark bookmarked"
+              src="icons/bookmark.png"
+              width="48"
+              height="48"
+              alt=""
+              />
+            
+            <div class="question__title">Question</div>
+            
+              <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
+            
+            
+              <div class="answers">
+                <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
+                <button data-js="right-answer" class="wrong-answer__btn answer__btn">Number two</button>
+                <button data-js="wrong-answer" class="right-answer__btn answer__btn">Number three</button>
+                <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+            </div>
+          </article>
 
+      </main>
       
       
-      <main data-js="create__formular" class="form hidden">
+      <main data-js="card-section__create" class="form hidden">
         <nav class="header__nav create">
           <h2>Create</h2>
         </nav>
@@ -120,7 +142,7 @@
       </form>
 
 
-      <main data-js="profile__section" class="profile hidden">
+      <main data-js="card-section__profile" class="profile hidden">
         <nav class="header__nav">
           <h1>Profile</h1>
          </nav>
@@ -138,25 +160,33 @@
           Hello, <br>
           I´m Lillian, an Online Marketing Manager currently
           studying Software Development at Neue Fische.
-          This here is my first ever app. I hope you enjoyed clicking through it.
-          
+          This here is my first ever app. I hope you enjoyed clicking through it
         </p>
-        <h3 class="my__skills">skills</h3>
+
+
+        <h3 class="my__skills">Skills</h3>
         <ul class="skill__list profile__taglist">
           <li class="tag">Online Marketing</li>
           <li class="tag">CSS</li>
           <li class="tag">HTML</li>
           <li class="tag">Javascript</li>
-          
+        </ul>
+
+        <h3 class="my__hobbies">Hobbies</h3>
+        <ul class="hobbie__list">
+          <li>Music</li>
+          <li>Moderation</li>
+          <li>Reading</li>
+          <li>Blogging</li>
         </ul>
         <button data-js="logOut__Button" class="log-out__button">Log out</button>
       </main>
 
     <nav class="footer">
-      <button data-js="button" class="nav__button">
+      <button data-js="nav-button__home" class="nav__button">
         <img src="icons/home.png" width="48" height="48" alt="home-icon" />
       </button>
-      <button data-js="button" class="nav__button">
+      <button data-js="nav-button__bookmark" class="nav__button">
         <img
           src="icons/bookmark.png"
           width="48"
@@ -164,10 +194,10 @@
           alt="bookmark-icon"
         />
       </button>
-      <button data-js="button" class="nav__button">
+      <button data-js="nav-button__input" class="nav__button">
         <img src="icons/input.png" width="48" height="48" alt="input-icon" />
       </button>
-      <button data-js="button" class="nav__button">
+      <button data-js="nav-button__profile" width="48" height="48" class="nav__button">
         <img
           src="icons/profile.png"
           width="48"
