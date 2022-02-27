@@ -1,3 +1,7 @@
-.hidden {
+hidden {
   display: none;
+}
+
+.active {
+  background: rgb(83, 119, 114);
 }

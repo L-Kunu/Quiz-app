@@ -11,7 +11,7 @@
   <body>
   
     
-    <main data-js="card-section__home" class="home">
+    <main data-js="dataPage-home" class="home">
       <nav class="header__nav home">
         <h1>QUIZ APP</h1>
         
@@ -28,16 +28,16 @@
             alt=""
             />
           
-          <div class="question__title">Question</div>
+          <div data-js="question" class="question__title">Question</div>
           
             <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
           
           
           <div data-js="answer-title" class="answers">
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number two</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
-            <button data-js="right-answer" class="right-answer__btn answer__btn">Number four</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number one</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number two</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number three</button>
+            <button data-js="right-answer__btn" class="answer__btn--right answer__btn">Number four</button>
         </div>
         </article>
 
@@ -49,14 +49,14 @@
             height="48"
             alt=""
           />
-          <div class="question__title">Question</div>
+          <div data-js="question" class="question__title">Question</div>
           <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
           
           <div class="answers">
-            <button data-js="right-answer" class="right-answer__btn answer__btn">Number one</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number two</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+            <button data-js="right-answer__btn" class="answer__btn--right answer__btn">Number one</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number two</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number three</button>
+            <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number four</button>
         </div>
         </article>
 
@@ -68,14 +68,14 @@
             height="48"
             alt=""
           />
-          <div class="question__title">Question</div>
+          <div data-js="question" class="question__title">Question</div>
           <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
           
           <div class="answers">
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
-            <button data-js="right-answer" class="right-answer__btn answer__btn">Number two</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number three</button>
-            <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+            <button data-js="wrong-answer__btn" class="wrong-answer__btn answer__btn">Number one</button>
+            <button data-js="right-answer__btn" class="right-answer__btn answer__btn">Number two</button>
+            <button data-js="wrong-answer__btn" class="wrong-answer__btn answer__btn">Number three</button>
+            <button data-js="wrong-answer__btn" class="wrong-answer__btn answer__btn">Number four</button>
         </div>
         </article>
 
@@ -83,7 +83,7 @@
       </main>
 
       
-      <main data-js="card-section__bookmark" class="bookmarks hidden">
+      <main data-js="dataPage-bookmarks" class="bookmarks bookmarked" hidden>
         <nav class="header__nav bookmarks">
           <h2>Bookmarks</h2>
            </nav>
@@ -97,52 +97,53 @@
               alt=""
               />
             
-            <div class="question__title">Question</div>
+            <div data-js="question" class="question__title">Question</div>
             
               <p class="question__text">Lorem ipsum, dolor ss minima mollitia fugiat assumenda dolorem</p> 
             
             
               <div class="answers">
-                <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number one</button>
-                <button data-js="right-answer" class="wrong-answer__btn answer__btn">Number two</button>
-                <button data-js="wrong-answer" class="right-answer__btn answer__btn">Number three</button>
-                <button data-js="wrong-answer" class="wrong-answer__btn answer__btn">Number four</button>
+                <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number two</button>
+                <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number one</button>
+                <button data-js="right-answer__btn" class="answer__btn--right answer__btn">Number three</button>
+                <button data-js="wrong-answer__btn" class="answer__btn--wrong answer__btn">Number four</button>
             </div>
           </article>
 
       </main>
       
       
-      <main data-js="card-section__create" class="form hidden">
+      <main data-js="dataPage-create" class="form" hidden>
         <nav class="header__nav create">
           <h2>Create</h2>
         </nav>
-      </main>
-      <form class="create__card" action="#">
-        <label for="question-input">Question</label>
-        <textarea name="question-input" id="#" class="question__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your question"></textarea>
-
-        <label for="answer-input">Answer</label>
-        <textarea name="answer-input" id="#" class="answer__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your answers"></textarea>
-        
-        <label class="create mt-15" for="create-tags"
-        >Add tags
-        <small class="create"></small>
-      </label>
-      <textarea
+        <form data-js="form" class="create__card" action="#">
+          <label for="question-input">Question</label>
+          <textarea name="question-input" id="#" class="question__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your question"></textarea>
+          
+          <label for="answer-input">Answer</label>
+          <textarea name="answer-input" id="#" class="answer__input" required="" cols="40" rows="5" name="Question" placeholder="Enter your answers"></textarea>
+          
+          <label class="create mt-15" for="create-tags"
+          >Add tags
+          <small class="create"></small>
+        </label>
+        <textarea
         name="create-tags"
         class="create__tags"
         cols="40"
         rows="3" placeholder="Spring, Summer, Autumn, Winter"></textarea>
       </textarea>
+      
+      <button class="create__btn">Create</button>
+    </form>
+    
+    
+    <section><ul role="list" class="card-list card" data-js="cards " ></ul></section>
+  </main>
 
-        <input type="submit" class="submit__button" value="Create">
 
-
-      </form>
-
-
-      <main data-js="card-section__profile" class="profile hidden">
+      <main data-js="dataPage-profile" class="profile" hidden>
         <nav class="header__nav">
           <h1>Profile</h1>
          </nav>
@@ -179,14 +180,14 @@
           <li>Reading</li>
           <li>Blogging</li>
         </ul>
-        <button data-js="logOut__Button" class="log-out__button">Log out</button>
+        <button data-js="logoutButton" class="logout__button">Log out</button>
       </main>
 
     <nav class="footer">
-      <button data-js="nav-button__home" class="nav__button">
+      <button data-js="navButton-home" class="active">
         <img src="icons/home.png" width="48" height="48" alt="home-icon" />
       </button>
-      <button data-js="nav-button__bookmark" class="nav__button">
+      <button data-js="navButton-bookmarks" class="nav__button">
         <img
           src="icons/bookmark.png"
           width="48"
@@ -194,10 +195,10 @@
           alt="bookmark-icon"
         />
       </button>
-      <button data-js="nav-button__input" class="nav__button">
+      <button data-js="navButton-create" class="nav__button">
         <img src="icons/input.png" width="48" height="48" alt="input-icon" />
       </button>
-      <button data-js="nav-button__profile" width="48" height="48" class="nav__button">
+      <button data-js="navButton-profile" width="48" height="48" class="nav__button">
         <img
           src="icons/profile.png"
           width="48"

@@ -45,3 +45,10 @@
   padding: 10px;
   text-align: center;
 }
+
+.answer__btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(155, 190, 202);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
